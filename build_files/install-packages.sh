@@ -19,7 +19,8 @@ dnf5 install -y \
     xonsh \
     rustup \
     vim \
-    kitty
+    kitty \
+    jetbrains-mono-fonts-all
 
 
 dnf5 remove -y \
