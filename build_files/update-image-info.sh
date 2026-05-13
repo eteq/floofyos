@@ -12,7 +12,6 @@ sed -i 's|"image-ref": [^,]*|"image-ref": "'"$IMAGE_REF"'"|' $IMAGE_INFO
 # OS Release File
 sed -i "s/^VARIANT_ID=.*/VARIANT_ID=$IMAGE_NAME/" /usr/lib/os-release
 
-
 # KDE About page
 sed -i "s|^Website=.*|Website=https://github.com/eteq/floofyos|" /etc/xdg/kcm-about-distrorc
 sed -i "s/^Variant=.*/Variant=Floofyos/" /etc/xdg/kcm-about-distrorc
