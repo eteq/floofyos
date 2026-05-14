@@ -1,11 +1,11 @@
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
 
-COPY system_files /system_files
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bazzite-nvidia:stable as floofyos
+FROM ghcr.io/ublue-os/bazzite-nvidia-open:stable as floofyos
+COPY system_files /
 
 ARG IMAGE_NAME=floofyos
 

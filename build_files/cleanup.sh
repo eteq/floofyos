@@ -15,10 +15,14 @@ dnf5 clean all
 # Clean temporary files
 rm -rf /tmp/*
 
+# clean extlinux which inexplicably gets added to boot at some point
+rm -rf /boot/extlinux
+
 # Cleanup the entirety of `/var`.
 # None of these get in the end-user system and bootc lints get super mad if anything is in there
 rm -rf /var
 mkdir -p /var
+
 
 # Commit and lint container
 ostree container commit
