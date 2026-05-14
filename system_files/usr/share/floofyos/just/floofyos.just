@@ -4,9 +4,9 @@ clean-floof:
     set -uxo pipefail
 
     echo "Cleaning up system..."
-    podman system prune -af
+    podman system prune -f
     flatpak uninstall --unused
     rpm-ostree cleanup -bm
-    sudo podman system prune -af
-    sudo docker system prune -af
+    sudo podman system prune -f
+    sudo docker system prune -f
     pixi clean cache -y
