@@ -82,16 +82,4 @@ mkdir -p /etc/modules-load.d && cat >>/etc/modules-load.d/ip_tables.conf <<EOF
 iptable_nat
 EOF
 
-
-# install nvidia-container-toolkit for gpu support in containers
-dnf5 config-manager addrepo --from-repofile="https://nvidia.github.io/libnvidia-container/stable/rpm/nvidia-container-toolkit.repo"
-# this is a  workaround due to SSL cert errors - see https://github.com/NVIDIA/nvidia-container-toolkit/issues/1733
-sed -i '/^sslcacert/d' /etc/yum.repos.d/nvidia-container-toolkit.repo 
-NVIDIA_CONTAINER_TOOLKIT_VERSION=1.19.0-1
-dnf install -y \
-      nvidia-container-toolkit-${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
-      nvidia-container-toolkit-base-${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
-      libnvidia-container-tools-${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
-      libnvidia-container1-${NVIDIA_CONTAINER_TOOLKIT_VERSION}
-
 echo "import \"/usr/share/floofyos/just/floofyos.just\"" >>/usr/share/ublue-os/justfile
