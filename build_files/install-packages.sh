@@ -20,7 +20,9 @@ dnf5 install -y \
     rustup \
     vim \
     kitty \
-    jetbrains-mono-fonts-all
+    jetbrains-mono-fonts-all \
+    cmake \
+    ninja-build
 
 
 dnf5 remove -y \
