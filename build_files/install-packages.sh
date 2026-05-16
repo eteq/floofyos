@@ -22,7 +22,8 @@ dnf5 install -y \
     kitty \
     jetbrains-mono-fonts-all \
     cmake \
-    ninja-build
+    ninja-build \
+    pv
 
 
 dnf5 remove -y \
