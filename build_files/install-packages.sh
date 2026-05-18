@@ -23,7 +23,9 @@ dnf5 install -y \
     jetbrains-mono-fonts-all \
     cmake \
     ninja-build \
-    pv
+    pv \
+    graphviz \
+    atuin
 
 
 dnf5 remove -y \
@@ -47,6 +49,9 @@ dnf5 --setopt=install_weak_deps=False install -y \
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+dnf5 -y copr enable atim/starship
+dnf5 -y install starship
+dnf5 -y copr disable atim/starship
 
 dnf5 install --enable-repo="copr:copr.fedorainfracloud.org:ublue-os:packages" -y \
     ublue-setup-services
