@@ -25,7 +25,12 @@ dnf5 install -y \
     ninja-build \
     pv \
     graphviz \
-    atuin
+    atuin \
+    eza \
+    fd-find \
+    tealdeer \
+    ugrep \
+    bat
 
 
 dnf5 remove -y \
