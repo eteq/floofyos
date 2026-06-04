@@ -30,7 +30,8 @@ dnf5 install -y \
     fd-find \
     tealdeer \
     ugrep \
-    bat
+    bat \
+    apfs-fuse
 
 
 dnf5 remove -y \
