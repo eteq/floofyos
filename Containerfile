@@ -2,10 +2,10 @@
 FROM scratch AS ctx
 
 COPY build_files /
+COPY system_files /system_files
 
 # Base Image
 FROM ghcr.io/ublue-os/bazzite-nvidia-open:stable as floofyos
-COPY system_files /
 
 ARG IMAGE_NAME=floofyos
 
