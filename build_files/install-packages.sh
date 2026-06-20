@@ -31,7 +31,8 @@ dnf5 install -y \
     tealdeer \
     ugrep \
     bat \
-    apfs-fuse
+    apfs-fuse \
+    gamemode
 
 
 dnf5 remove -y \
