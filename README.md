@@ -8,6 +8,7 @@ This is a custom Fedora Atomic image for my daily use.  Main uses include astrop
 * Borrows heavily from bazzite-dx additions
 * Most apps intended to be flatpak-based
 * Distrobox-heavy development (i.e., relatively bare-bones base, intended to be complemented by frequently-changing dev packages)
+* Skips brew updating because of the focus on other ways to do CLI
 
 ## Acknowledgments
 
