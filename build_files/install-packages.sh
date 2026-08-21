@@ -32,7 +32,8 @@ dnf5 install -y \
     ugrep \
     bat \
     apfs-fuse \
-    gamemode
+    gamemode \
+    git-credential-libsecret
 
 
 dnf5 remove -y \
