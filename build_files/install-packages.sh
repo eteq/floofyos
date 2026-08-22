@@ -33,7 +33,8 @@ dnf5 install -y \
     bat \
     apfs-fuse \
     gamemode \
-    git-credential-libsecret
+    git-credential-libsecret \
+    npm
 
 
 dnf5 remove -y \
