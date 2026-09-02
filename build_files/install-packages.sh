@@ -34,8 +34,7 @@ dnf5 install -y \
     apfs-fuse \
     gamemode \
     git-credential-libsecret \
-    npm \
-    bluez-deprecated
+    npm
 
 
 dnf5 remove -y \
