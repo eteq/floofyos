@@ -23,9 +23,4 @@ rm -rf /boot/extlinux
 rm -rf /var
 mkdir -p /var
 
-
-# Commit and lint container
-ostree container commit
-bootc container lint
-
 log "Cleanup completed"
