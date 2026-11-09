@@ -28,7 +28,6 @@ dnf5 install -y \
     atuin \
     eza \
     fd-find \
-    tealdeer \
     ugrep \
     bat \
     apfs-fuse \
