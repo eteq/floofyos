@@ -11,9 +11,6 @@ ARG IMAGE_NAME=floofyos
 
 
 RUN --mount=type=bind,from=ctx,source=/,target=/run/context \
-    --mount=type=cache,dst=/var/cache \
-    --mount=type=cache,dst=/var/cache/libdnf5 \
-    --mount=type=cache,dst=/var/log \
     --mount=type=cache,dst=/build_cache \
     --mount=type=cache,dst=/build_logs \
     --mount=type=tmpfs,dst=/tmp \
